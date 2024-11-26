@@ -35,8 +35,6 @@ export function HowItWorks() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const st = window.pageYOffset || document.documentElement.scrollTop;
-      
       if (triggerPoint.current && phoneContainerRef.current) {
         const trigger = triggerPoint.current.getBoundingClientRect();
         const shouldLock = trigger.top <= 0;
