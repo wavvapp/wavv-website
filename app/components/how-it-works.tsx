@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 export function HowItWorks() {
   const [activeSection, setActiveSection] = useState(0);
@@ -33,8 +34,6 @@ export function HowItWorks() {
   ];
 
   useEffect(() => {
-    let lastScrollTop = 0;
-    
     const handleScroll = () => {
       const st = window.pageYOffset || document.documentElement.scrollTop;
       
@@ -42,7 +41,6 @@ export function HowItWorks() {
         const trigger = triggerPoint.current.getBoundingClientRect();
         const shouldLock = trigger.top <= 0;
         
-        // Only update if the state actually changes
         if (isLocked !== shouldLock) {
           setIsLocked(shouldLock);
         }
@@ -64,12 +62,9 @@ export function HowItWorks() {
         }
       });
 
-      // Only update if the active section changes
       if (activeSection !== newActiveSection) {
         setActiveSection(newActiveSection);
       }
-
-      lastScrollTop = st <= 0 ? 0 : st;
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -101,10 +96,13 @@ export function HowItWorks() {
                 activeSection === index ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              <img
+              <Image
                 src={section.phoneImage}
                 alt={section.title}
                 className="w-full h-full object-cover"
+                width={280}
+                height={580}
+                priority={index === 0}
               />
             </div>
           ))}
@@ -113,28 +111,31 @@ export function HowItWorks() {
 
       {/* Content Container */}
       <div className="max-w-[1200px] mx-auto">
-        <div className="lg:w-[45%] lg:ml-[20%]">
+        <div className="lg:w-[35%] lg:ml-[20%]">
           {sections.map((section, index) => (
             <div
               key={index}
-              ref={el => sectionRefs.current[index] = el}
+              ref={el => { sectionRefs.current[index] = el }}
               className="min-h-screen flex items-center p-8"
             >
               <div className="space-y-2">
                 <h2 className="text-3xl font-medium text-white tracking-tight">
                   {section.title}
                 </h2>
-                <p className="text-l text-gray-400 leading-relaxed">
+                <p className="text-white font-mono leading-relaxed">
                   {section.description}
                 </p>
                 
                 {/* Mobile-only image */}
-                <div className="lg:hidden mt-8">
+                <div className="lg:hidden mt-8 pt-16">
                   <div className="rounded-[40px] overflow-hidden w-[280px] mx-auto">
-                    <img
+                    <Image
                       src={section.phoneImage}
                       alt={section.title}
                       className="w-full"
+                      width={280}
+                      height={580}
+                      priority={index === 0}
                     />
                   </div>
                 </div>
