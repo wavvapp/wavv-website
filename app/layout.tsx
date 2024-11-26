@@ -1,17 +1,23 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
 const jetbrainsMono = JetBrains_Mono({ 
   subsets: ['latin'],
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  title: 'Product Name',
-  description: 'A simple and elegant product website',
+const metadata: Metadata = {
+  title: 'Wavv',
+  description: 'Signal your Wave',
+  icons: {
+    icon: '/images/favicon.ico',
+    apple: '/images/apple-icon.png',
+    shortcut: '/images/favicon-16x16.png',
+  },
 }
+
+export { metadata }
 
 export default function RootLayout({
   children,
