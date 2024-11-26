@@ -1,10 +1,10 @@
 export function Footer() {
   return (
-    <footer className="bg-white mt-auto">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="mt-8 md:mt-0">
-          <p className="text-center text-base text-gray-400">
-            &copy; 2023 Product Name. All rights reserved.
+    <footer className="backdrop-blur-md bg-black/30 border-t border-white/10">
+      <div className="max-w-3xl mx-auto px-4">
+        <div className="flex h-10 items-center justify-center">
+          <p className="text-sm text-gray-300 font-mono tracking-tight">
+            &copy; 2024 Wavv
           </p>
         </div>
       </div>
