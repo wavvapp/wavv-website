@@ -40,7 +40,7 @@ export function Features() {
           <div className="absolute inset-0 bg-black/70" />
           <div className="relative h-full p-8 flex flex-col justify-end z-10">
             <div>
-              <h3 className="text-2xl font-bold mb-3 text-white">
+              <h3 className="text-3xl font-medium text-white tracking-tight mb-3">
                 {features[0].title}
               </h3>
               <p className="text-white font-mono">
@@ -60,7 +60,7 @@ export function Features() {
             <div className="absolute inset-0 bg-black/70" />
             <div className="relative h-full p-8 flex flex-col justify-end z-10">
               <div>
-                <h3 className="text-2xl font-bold mb-3 text-white">
+                <h3 className="text-3xl font-medium text-white tracking-tight mb-3">
                   {features[1].title}
                 </h3>
                 <p className="text-white font-mono">
@@ -81,7 +81,7 @@ export function Features() {
                 <div className="absolute inset-0 bg-black/70" />
                 <div className="relative h-full p-8 flex flex-col justify-end z-10">
                   <div>
-                    <h3 className="text-2xl font-bold mb-3 text-white">
+                    <h3 className="text-3xl font-medium text-white tracking-tight mb-3">
                       {features[index].title}
                     </h3>
                     <p className="text-white font-mono">
