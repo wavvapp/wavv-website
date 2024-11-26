@@ -11,27 +11,23 @@ export function HowItWorks() {
   
   const sections = [
     {
-      title: "Signal your availability",
-      description: "Let your friends know when you're free to hang out.",
-      subtext: "Simple, quick, and effective way to connect.",
+      title: "Send Out Your Wave",
+      description: "Wave is your social signal to coordinate with friends.",
       phoneImage: "/images/wavv_screen_01.png"
     },
     {
-      title: "Find available friends",
-      description: "Turn it on to signal your availability and see who else is free.",
-      subtext: "Connect with friends at Tempelhofer Feld or anywhere else.",
+      title: "Signal Availability",
+      description: "Switch your Signal on to indicate you're free to hang out today.",
       phoneImage: "/images/wavv_screen_02.png"
     },
     {
-      title: "Stay connected",
-      description: "Real-time updates on your friends' availability.",
-      subtext: "Never miss an opportunity to meet up.",
+      title: "Customize Signal",
+      description: "Signal what you plan to do, when you plan to do it, and who should see it.",
       phoneImage: "/images/wavv_screen_03.png"
     },
     {
-      title: "Stay connected",
-      description: "Real-time updates on your friends' availability.",
-      subtext: "Never miss an opportunity to meet up.",
+      title: "See Friend's Signals",
+      description: "Get a live overview of which friends are free and what they're planning today.",
       phoneImage: "/images/wavv_screen_04.png"
     }
   ];
