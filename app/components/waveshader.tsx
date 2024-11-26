@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useEffect } from "react"
+import { useRef } from "react"
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import { Vector2, ShaderMaterial, Mesh } from "three"
 
