@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import Link from 'next/link'
+import Link from "next/link";
 
 export function Navigation() {
   return (
@@ -9,23 +9,28 @@ export function Navigation() {
         <div className="flex justify-between h-12">
           <div className="flex w-full justify-center">
             <div className="flex space-x-8">
-              <Link 
-                href="#features" 
+              <Link
+                href="#features"
                 className="border-transparent text-gray-300 hover:border-gray-300 hover:text-white inline-flex items-center px-1 border-b-2 text-sm font-mono tracking-tight transition-colors"
               >
-                {'>'}features
+                {">"}features
               </Link>
-              <Link 
-                href="#how-it-works" 
+              <Link
+                href="#how-it-works"
                 className="border-transparent text-gray-300 hover:border-gray-300 hover:text-white inline-flex items-center px-1 border-b-2 text-sm font-mono tracking-tight transition-colors"
               >
-                {'>'}how_it_works
+                {">"}how_it_works
+              </Link>
+              <Link
+                href="#download_link"
+                className="border-transparent text-gray-300 hover:border-gray-300 hover:text-white inline-flex items-center px-1 border-b-2 text-sm font-mono tracking-tight transition-colors"
+              >
+                {">"}download
               </Link>
             </div>
           </div>
         </div>
       </div>
     </nav>
-  )
+  );
 }
-
