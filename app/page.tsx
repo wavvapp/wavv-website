@@ -1,9 +1,9 @@
 import { Navigation } from "./components/navigation";
 import { HowItWorks } from "./components/HowItWorks";
-import Features from "./components/Features";
-import { Download } from "./components/Download";
-import { Hero } from "./components/Hero";
-import { Footer } from "./components/Footer";
+import Features from "./components/features";
+import { Footer } from "./components/footer";
+import { Hero } from "./components/hero";
+import { Download } from "lucide-react";
 
 export default function Home() {
   return (

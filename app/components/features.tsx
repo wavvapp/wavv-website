@@ -1,6 +1,5 @@
 import { features } from "../data/features";
 import FeatureCard from "./FeatureCard";
-
 const Features = () => {
   return (
     <section className="w-full min-h-screen px-16 py-20 md:h-screen bg-white flex items-center justify-center">
@@ -20,7 +19,7 @@ const Features = () => {
               <FeatureCard
                 key={index + 2}
                 feature={feature}
-                className="aspect-square md:aspect-auto md:h-full" // Remove aspect-square on tablet
+                className="aspect-square"
               />
             ))}
           </div>
@@ -29,5 +28,4 @@ const Features = () => {
     </section>
   );
 };
-
 export default Features;
