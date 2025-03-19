@@ -22,7 +22,7 @@ export function Navigation() {
                 {">"}how_it_works
               </Link>
               <Link
-                href="#download_link"
+                href="#download"
                 className="border-transparent text-gray-300 hover:border-gray-300 hover:text-white inline-flex items-center px-1 border-b-2 text-sm font-mono tracking-tight transition-colors"
               >
                 {">"}download

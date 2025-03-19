@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Download() {
   return (
-    <div className="flex items-center justify-center py-16 bg-black text-white h-screen">
+    <section className="flex items-center justify-center py-16 bg-black text-white h-screen">
       <div className="flex flex-col gap-8 items-center text-center">
         <div className="flex flex-col gap-6 leading-7">
           <h1 className="font-anton text-5xl">Try it out now!</h1>
@@ -41,6 +41,6 @@ export function Download() {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

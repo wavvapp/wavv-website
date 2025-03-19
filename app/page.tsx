@@ -16,7 +16,9 @@ export default function Home() {
       <section id="how-it-works">
         <HowItWorks />
       </section>
-      <Download />
+      <section id="download">
+        <Download />
+      </section>
       <Footer />
     </div>
   );

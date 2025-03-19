@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 
 const Features = () => {
   return (
-    <section className="w-full min-h-screen p-16 md:h-screen bg-white flex items-center justify-center">
+    <section className="w-full min-h-screen px-16 py-20 md:h-screen bg-white flex items-center justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
         <FeatureCard
           feature={features[0]}
@@ -20,7 +20,7 @@ const Features = () => {
               <FeatureCard
                 key={index + 2}
                 feature={feature}
-                className="aspect-square"
+                className="aspect-square md:aspect-auto md:h-full" // Remove aspect-square on tablet
               />
             ))}
           </div>
