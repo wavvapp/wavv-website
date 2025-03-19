@@ -11,7 +11,7 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ feature, className }: FeatureCardProps) => (
   <div
-    className={`relative rounded-2xl overflow-hidden transition-transform hover:scale-[1.02] min-h-[300px] ${className}`}
+    className={`relative rounded-2xl overflow-hidden transition-transform hover:scale-[1.02] ${className}`}
   >
     <Image
       src={feature.image}
@@ -20,11 +20,11 @@ const FeatureCard = ({ feature, className }: FeatureCardProps) => (
       fill
     />
     <div className="absolute inset-0 bg-black/70" />
-    <div className="relative h-full p-6 md:p-4 sm:p-3 flex flex-col justify-end z-10">
-      <h3 className="text-5xl md:text-5xl sm:text-3xl font-anton font-normal text-white tracking-tight mb-3 leading-7">
+    <div className="relative h-full p-6 flex flex-col justify-end z-10">
+      <h3 className="text-5xl lg:text-3xl md:text-4xl sm:text-3xl font-anton font-normal text-white tracking-tight mb-3">
         {feature.title}
       </h3>
-      <p className="text-white font-mono leading-5 line-clamp-3 sm:line-clamp-2">
+      <p className="text-base lg:text-sm md:text-base sm:text-sm text-white font-mono leading-relaxed">
         {feature.description}
       </p>
     </div>

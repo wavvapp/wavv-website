@@ -3,7 +3,7 @@ import { HowItWorks } from "./components/HowItWorks";
 import Features from "./components/features";
 import { Footer } from "./components/footer";
 import { Hero } from "./components/hero";
-import { Download } from "lucide-react";
+import { Download } from "./components/Download";
 
 export default function Home() {
   return (
