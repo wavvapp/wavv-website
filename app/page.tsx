@@ -1,9 +1,9 @@
 import { Navigation } from "./components/navigation";
 import { HowItWorks } from "./components/HowItWorks";
-import Features from "./components/features";
 import { Footer } from "./components/footer";
 import { Hero } from "./components/hero";
 import { Download } from "./components/Download";
+import Features from "./components/features";
 
 export default function Home() {
   return (
