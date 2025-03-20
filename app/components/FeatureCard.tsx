@@ -20,7 +20,7 @@ const FeatureCard = ({ feature, className }: FeatureCardProps) => (
       fill
     />
     <div className="absolute inset-0 bg-black/70" />
-    <div className="relative h-full p-6 flex flex-col justify-end z-10">
+    <div className="relative h-full p-6 flex flex-col justify-end z-10 max-w-[33rem]">
       <h3 className="text-5xl lg:text-3xl md:text-4xl sm:text-3xl font-anton font-normal text-white tracking-tight mb-3">
         {feature.title}
       </h3>
