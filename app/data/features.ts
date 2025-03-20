@@ -14,19 +14,19 @@ export const features: FeatureCard[] = [
   {
     title: "Let Friends Know You're Free",
     description:
-      "Signal your availability with a single tap and show friends you're up for hanging out today.",
+      "Broadcast your availability or plans to multiple friends at once.",
     image: "/images/wavv_img_02.png",
   },
   {
-    title: "Control Who Sees Your Plans",
+    title: "Control Who Sees What",
     description:
-      "Choose who sees your availability. Share with everyone, specific friend groups, or specific friends.",
+      "Choose who sees and get notified by your plan. Share with everyone, specific friend groups, or specific friends.",
     image: "/images/wavv_img_03.png",
   },
   {
-    title: "Make Meetups Effortless",
+    title: "Meet IRL, effortlessly",
     description:
-      "No more endless chats to figure out when to do what. Just tap to share your activity ideas, time, and location.",
+      "No more endless chats to figure out plans. Just tap to share your activity ideas, time, and location.",
     image: "/images/wavv_img_04.png",
   },
 ];
