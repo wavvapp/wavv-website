@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Navigation />
       <Hero />
-      <section id="Features">
+      <section id="features">
         <Features />
       </section>
       <section id="how-it-works">
