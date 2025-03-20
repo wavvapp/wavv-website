@@ -3,8 +3,8 @@ import FeatureCard from "./FeatureCard";
 
 const Features = () => {
   return (
-    <section className="w-full min-h-screen px-16 py-20 md:h-screen bg-white flex items-center justify-center">
-      <div className="w-full">
+    <section className="in-h-screen px-16 py-20 md:h-screen bg-white flex items-center justify-center ">
+      <div className="mx-auto max-w-[1512px]">
         <div className="hidden md:grid lg:hidden grid-cols-2 gap-4 w-full">
           {features.slice(0, 4).map((feature, index) => (
             <FeatureCard

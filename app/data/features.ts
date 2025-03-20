@@ -12,7 +12,7 @@ export const features: FeatureCard[] = [
     image: "/images/wavv_img_01.png",
   },
   {
-    title: "Let Friends Know You're Free",
+    title: "Let Friends Know Your plans",
     description:
       "Broadcast your availability or plans to multiple friends at once.",
     image: "/images/wavv_img_02.png",
