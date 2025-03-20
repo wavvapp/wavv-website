@@ -19,7 +19,7 @@ export function HowItWorks() {
     },
     {
       title: "Send out your wave",
-      description: "Wave is your social to coordinate with friends.",
+      description: "Wave is your social signal to coordinate with friends.",
       phoneImage: "/images/wavv_screen_02.png",
     },
     {
@@ -34,7 +34,7 @@ export function HowItWorks() {
       phoneImage: "/images/wavv_screen_04.png",
     },
     {
-      title: "See friends'waves",
+      title: "See friends' waves",
       description:
         "Get a live overview of which friends are free and what they're planning today.",
       phoneImage: "/images/wavv_screen_05.png",
@@ -114,7 +114,7 @@ export function HowItWorks() {
           right: isLocked ? "calc(40% - 280px)" : "calc(40% - 280px)",
         }}
       >
-        <div className="relative w-[280px] h-[580px] rounded-[40px] overflow-hidden shadow-2xl">
+        <div className="relative w-[324.38px] h-[702px] rounded-[33.27px] overflow-hidden shadow-2xl">
           {sections.map((section, index) => (
             <div
               key={index}
@@ -126,8 +126,8 @@ export function HowItWorks() {
                 src={section.phoneImage}
                 alt={section.title}
                 className="w-full h-full object-cover"
-                width={280}
-                height={580}
+                width={324.38}
+                height={702}
                 priority={index === 0}
               />
             </div>
