@@ -17,7 +17,7 @@ export function Download() {
             href={
               "https://apps.apple.com/us/app/wavv-link-up-offline/id6738583772"
             }
-            className="cursor-pointer hover:scale-[1.1] transition-transform duration-300 ease-in-out"
+            className="cursor-pointer hover:scale-[1.08] transition-transform duration-300 ease-in-out"
           >
             <Image
               src={"/images/apple_store.png"}
@@ -30,7 +30,7 @@ export function Download() {
             href={
               "https://play.google.com/store/apps/details?id=com.apeunit.wavv.app"
             }
-            className="cursor-pointer hover:scale-[1.1] transition-transform duration-300 ease-in-out"
+            className="cursor-pointer hover:scale-[1.08] transition-transform duration-300 ease-in-out"
           >
             <Image
               src={"/images/google_playstore.png"}
