@@ -1,5 +1,5 @@
-import Scene from './waveshader'
-import Image from 'next/image'
+import Scene from "./waveshader";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -17,11 +17,11 @@ export function Hero() {
             />
           </div>
           <p className="mt-3 max-w-md mx-auto text-base text-gray-200 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl font-mono tracking-tight">
-            Signal friends your availability. Stay connected effortlessly with your circle through simple, intuitive status sharing.
+            Broadcast your availability. Stay connected effortlessly with your
+            circle through simple, intuitive status sharing.
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
