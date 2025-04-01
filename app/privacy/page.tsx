@@ -124,7 +124,7 @@ export default function Page() {
     <div className="flex flex-col pt-11 max-w-4xl mx-auto">
       {PRIVACY_POLICY_CONTENT.map((privacy) => {
         return (
-          <div>
+          <div key={privacy.pageTitle}>
             <div className="flex flex-row justify-between items-center w-full px-5 border-b-2 border-gray-300">
               <h1 className="flex-grow text-xl leading-7 italic pb-4">
                 {privacy.pageTitle}
