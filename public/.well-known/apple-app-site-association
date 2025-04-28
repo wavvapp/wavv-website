@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "CZ6DRS2DW4.com.apeunit.social.app",
+        "paths": ["/deeplink/*"]
+      }
+    ]
+  },
+  "activitycontinuation": {
+    "apps": ["CZ6DRS2DW4.com.apeunit.social.app"]
+  },
+  "webcredentials": {
+    "apps": ["CZ6DRS2DW4.com.apeunit.social.app"]
+  }
+}
