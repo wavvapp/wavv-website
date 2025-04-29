@@ -40,6 +40,8 @@ export default function DeepLinkHandler() {
         //@ts-expect-error
       } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         window.location.href = APP_STORE_LINK;
+      } else {
+        window.location.href = PLAY_STORE_LINK;
       }
     }, 1500);
 
