@@ -20,8 +20,11 @@ export default function DeepLinkHandler() {
     const screen = params?.params?.[0] || searchParams.get("screen") || "Home";
     const userId = searchParams.get("userId");
     const username = searchParams.get("username");
+    const names = searchParams.get("names");
 
-    const queryParams = userId ? `?userId=${userId}&username=${username}` : "";
+    const queryParams = userId
+      ? `?userId=${userId}&username=${username}&names=${names}`
+      : "";
 
     const deepLink = `wavv://${screen}${queryParams}`;
 
