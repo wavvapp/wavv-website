@@ -14,7 +14,7 @@ export default function DeepLinkHandler() {
   const [redirected, setRedirected] = useState(false);
 
   useEffect(() => {
-    if (typeof Window === "undefined") return;
+    if (typeof window === "undefined") return;
     if (redirected) return;
 
     const screen = params?.params?.[0] || searchParams.get("screen") || "Home";
@@ -24,8 +24,10 @@ export default function DeepLinkHandler() {
 
     const deepLink = `wavv://${screen}${queryParams}`;
 
-    window.location.href = deepLink;
-    setRedirected(true);
+    const redirectToAppTimer = setTimeout(() => {
+      window.location.href = deepLink;
+      setRedirected(true);
+    }, 200);
 
     const timer = setTimeout(() => {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -41,7 +43,10 @@ export default function DeepLinkHandler() {
       }
     }, 1500);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(redirectToAppTimer);
+    };
   }, [params, searchParams, redirected]);
 
   return (
