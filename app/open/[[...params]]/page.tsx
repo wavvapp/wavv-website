@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const PLAY_STORE_LINK =
   "https://play.google.com/store/apps/details?id=com.apeunit.wavv.app";
@@ -13,7 +13,7 @@ export default function DeepLinkHandler() {
   const params = useParams();
   const [redirected, setRedirected] = useState(false);
 
-  useEffect(() => {
+  const handleDeepLink = useCallback(() => {
     if (typeof window === "undefined") return;
     if (redirected) return;
 
@@ -24,16 +24,19 @@ export default function DeepLinkHandler() {
 
     const deepLink = `wavv://${screen}${queryParams}`;
 
-    const redirectToAppTimer = setTimeout(() => {
-      window.location.href = deepLink;
-      setRedirected(true);
-    }, 200);
+    const a = document.createElement("a");
+    a.href = deepLink;
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    setRedirected(true);
 
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-expect-error
-      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      const userAgent = navigator.userAgent || window.opera;
 
+      console.log({ userAgent });
       if (/android/i.test(userAgent)) {
         window.location.href = PLAY_STORE_LINK;
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -44,12 +47,11 @@ export default function DeepLinkHandler() {
         window.location.href = PLAY_STORE_LINK;
       }
     }, 1500);
-
-    return () => {
-      clearTimeout(timer);
-      clearTimeout(redirectToAppTimer);
-    };
   }, [params, searchParams, redirected]);
+
+  useEffect(() => {
+    handleDeepLink();
+  }, [handleDeepLink]);
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-4">
