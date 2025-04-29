@@ -21,12 +21,15 @@ export default function DeepLinkHandler() {
     const userId = searchParams.get("userId");
     const username = searchParams.get("username");
     const names = searchParams.get("names");
+    const host = searchParams.get("host");
 
     const queryParams = userId
       ? `?userId=${userId}&username=${username}&names=${names}`
       : "";
 
-    const deepLink = `wavv://${screen}${queryParams}`;
+    const deepLink = host
+      ? `exp://${host}/${screen}/${queryParams}`
+      : `wavv://${screen}${queryParams}`;
 
     const a = document.createElement("a");
     a.href = deepLink;
