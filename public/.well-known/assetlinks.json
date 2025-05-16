@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.apeunit.wavv.app",
+      "sha256_cert_fingerprints": [
+        "18:E1:42:51:84:9F:4D:26:D4:42:9D:C7:AC:6C:19:33:B1:4F:4E:35:3E:CF:EB:02:E4:11:B3:A9:52:47:03:8B"
+      ]
+    }
+  }
+]
