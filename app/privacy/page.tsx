@@ -53,7 +53,7 @@ const PRIVACY_POLICY_CONTENT = [
       {
         title: "Contact Information",
         content:
-          "For any privacy-related questions or concerns, please contact us at [Your Company Email Address]. We are committed to addressing your privacy inquiries promptly and transparently.",
+          "For any privacy-related questions or concerns, please contact us at hello@wavvapp.com. We are committed to addressing your privacy inquiries promptly and transparently.",
       },
     ],
   },
@@ -108,12 +108,12 @@ const PRIVACY_POLICY_CONTENT = [
       {
         title: "Dispute Resolution",
         content:
-          "Any disputes arising from the use of this application shall be resolved through binding arbitration in accordance with the rules of [Your Jurisdiction]. Users agree that any legal action shall be brought in the courts of [Your Jurisdiction] and waive any objections to jurisdiction and venue.",
+          "Any disputes arising from the use of this application shall be resolved through binding arbitration in accordance with the rules of German's laws. Users agree that any legal action shall be brought in the courts in Germany and waive any objections to jurisdiction and venue.",
       },
       {
         title: "Contact Information",
         content:
-          "For any questions, concerns, or notices regarding these Terms of Use, please contact us at [Your Official Contact Email]. By using the application, users acknowledge they have read, understood, and agree to be bound by these terms.",
+          "For any questions, concerns, or notices regarding these Terms of Use, please contact us at hello@wavvapp.com. By using the application, users acknowledge they have read, understood, and agree to be bound by these terms.",
       },
     ],
   },
