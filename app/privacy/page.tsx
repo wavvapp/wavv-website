@@ -28,7 +28,7 @@ const PRIVACY_POLICY_CONTENT = [
       {
         title: "Data Storage and Security",
         content:
-          "User email addresses are encrypted and stored securely. We implement industry-standard security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. Access to user data is restricted to essential personnel required for app maintenance and support.",
+          "We implement industry-standard security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. Access to user data is restricted to essential personnel required for app maintenance and support.",
       },
       {
         title: "User Rights",
